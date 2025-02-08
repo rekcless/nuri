@@ -1,77 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e8f5e9;
-    color: #2e7d32;
+/* Reset Default */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body */
+body {
+    background: #e8f5e9; /* Warna hijau muda */
+    color: #2e7d32;
+    padding-bottom: 60px; /* Supaya footer nggak ketutup */
+}
+
+/* Header */
 header {
-    background-color: #1b5e20;
+    background: #1b5e20;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
+/* Container */
 main {
     width: 80%;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
+/* Artikel (Efek Timbul) */
 article {
     background: white;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
     border-left: 5px solid #1b5e20;
-    border-radius: 8px; /* Biar ada sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek timbul */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
+                -4px -4px 10px rgba(255, 255, 255, 0.7); /* Efek timbul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 article:hover {
-    transform: translateY(-5px); /* Saat di-hover, naik sedikit */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+                -6px -6px 15px rgba(255, 255, 255, 0.8);
 }
 
+/* Judul Postingan */
 h2 {
     color: #1b5e20;
+    margin-bottom: 10px;
 }
 
+/* Meta Info */
 .meta {
     font-size: 14px;
     color: #388e3c;
+    margin-bottom: 10px;
 }
 
+/* Tombol Baca Selengkapnya */
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     background: #1b5e20;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .read-more:hover {
     background: #2e7d32;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background: #1b5e20;
     color: white;
     position: fixed;
-    width: 100%;
     bottom: 0;
-}
-
-article {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #1b5e20;
-    border-radius: 8px; /* Biar ada sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek timbul */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
