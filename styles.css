@@ -23,7 +23,14 @@ article {
     padding: 20px;
     margin-bottom: 20px;
     border-left: 5px solid #1b5e20;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Biar ada sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek timbul */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-5px); /* Saat di-hover, naik sedikit */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -57,4 +64,14 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1b5e20;
+    border-radius: 8px; /* Biar ada sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek timbul */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
