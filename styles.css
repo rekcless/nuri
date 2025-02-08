@@ -67,3 +67,11 @@ a:hover {
 .pagination-btn:disabled {
     background: #ccc;
 }
+
+footer {
+    background-color: #2e8b57; /* Hijau tua */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
